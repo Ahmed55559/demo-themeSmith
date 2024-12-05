@@ -1,0 +1,88 @@
+/* Basic Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.btn-secondary:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.text {
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.theme-switcher {
+  margin-top: 20px;
+}
+
+#theme-select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.import {
+  margin: 20px 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: relative;
+  bottom: -100px;
+}

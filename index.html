@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Manager Demo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Theme Manager Demo</h1>
+      <p>Switch between different themes to see how they change the appearance.</p>
+    </header>
+
+    <section class="content">
+      <button class="btn btn-primary">Primary Button</button>
+      <button class="btn btn-secondary">Secondary Button</button>
+      <p class="text">This is some sample text to show the theme effects.</p>
+    </section>
+    
+    <div class="theme-switcher">
+      <label for="theme-select">Choose a theme:</label>
+      <select id="theme-select"></select>
+      <button class="btn btn-primary" id="apply">Apply theme</button>
+    </div>
+    <div class="import">
+      <input type="file" id="themeFileInput" accept=".json" />
+      <button class="btn btn-primary " id="importThemesBtn">Import themes</button>
+
+    </div>
+    <div class="export">
+      <button class="btn btn-secondary export-all" >export all</button>
+      <button class="btn btn-secondary export-curr">export current theme</button>
+      <p>Open the console to see the messages
+      </p>
+    </div>
+    
+  </div>
+  <footer>   <p>&copy; 2024 aprogrammer55559 | ThemeSmith v1.0</footer>
+  <script src="main.js" type="module"></script>
+  <script src="themeSmith.min.js" type="module"></script>
+</body>
+</html>
